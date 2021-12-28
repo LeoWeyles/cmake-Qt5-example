@@ -26,4 +26,4 @@ include_directories(src)
 
 # FractalCreation
 add_executable(myApplication app/myApplication.cpp ${source})
-qt5_use_modules(myApplication Widgets)
+target_link_libraries(myApplication Qt5::Widgets)
